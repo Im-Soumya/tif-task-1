@@ -17,7 +17,7 @@ const openSans = Open_Sans({
 
 const Hero = () => {
   return (
-    <div className="pt-[580px] sm:pt-[600px] md:flex lg:pt-0">
+    <div className="pt-[580px] pb-[68px] md:pl-20 md:flex md:pt-0">
         <div className="md:flex flex-col items-start md:w-1/2">
             <div className="hidden mt-10 md:flex">
                 <Image src={truck} alt="truck" />
