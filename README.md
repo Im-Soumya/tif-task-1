@@ -1,4 +1,9 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# The Internet Folks Software Engineering Intern Assignment
+
+This is the task 1 of Round 2 (React Assignment).
+
+<strong>Task 1: Build UI</strong>
+Figma design was provided and the final project was supposed to be exactly the same as the design.
 
 ## Getting Started
 
