@@ -5,11 +5,11 @@ import Hero from "@/components/Hero";
 
 export default function Home() {
   return (
-    <div className="ml-28">
+    <div className="md:ml-28">
       <Hero />
-      <About />
+      {/* <About />
       <Articles />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }
