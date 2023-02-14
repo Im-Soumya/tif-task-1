@@ -35,7 +35,7 @@ const Hero = () => {
         </div>
 
         <div>
-            <button className={`${source.className} font-[600] absolute top-5 right-5 z-10 w-[88px] h-[31px] md:w-[122px] md:h-[42px] text-[11px] md:text-[16px] border-1 border-white rounded-full text-white hover:bg-[#c42b38] duration-200`}>Get in Touch</button>
+            <button className={`${source.className} font-[600] absolute top-5 right-5 z-10 w-[92px] h-[31px] md:w-[122px] md:h-[42px] text-[12px] md:text-[16px] border-1 border-white rounded-full text-white hover:bg-[#c42b38] duration-200`}>Get in Touch</button>
         </div>
     </div>
   )

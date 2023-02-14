@@ -22,8 +22,8 @@ const About = () => {
 
         <div className='text-center md:text-left md:w-1/2 md:pl-12'>
             <h1 className={`${poppins.className} text-primaryBlue text-[26px] md:text-[45px] pb-4 md:pb-6`}>About Us</h1>
-            <p className='text-[11px] md:text-[15px] px-[50px] md:px-0 text-bodyBlack pb-4 md:pb-6'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. t has survived not only five centuries.</p>
-            <button className={`${source.className} w-24 md:w-[132px] h-8 md:h-[42px] text-[11px] md:text-[16px] bg-jasper rounded-full hover:bg-[#c42b38] duration-200`}>Read More</button>
+            <p className='text-[12px] md:text-[15px] px-[50px] md:px-0 text-bodyBlack pb-4 md:pb-6'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. t has survived not only five centuries.</p>
+            <button className={`${source.className} w-24 md:w-[132px] h-8 md:h-[42px] text-[12px] md:text-[16px] bg-jasper rounded-full hover:bg-[#c42b38] duration-200`}>Read More</button>
         </div>
     </div>
   )

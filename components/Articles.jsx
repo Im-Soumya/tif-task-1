@@ -61,7 +61,7 @@ const Articles = () => {
                            </div>    
         
                            <div className="flex justify-center lg:justify-start">
-                               <button className={`${source.className} py-3 px-8 border-1 border-bodyBlack text-bodyBlack rounded-full hover:bg-gray-100 duration-200`}>Read More</button>
+                               <button className={`${source.className} text-[11px] md:text-[16px] py-2 md:py-3 px-6 md:px-8 border-1 border-bodyBlack text-bodyBlack rounded-full hover:bg-gray-100 duration-200`}>Read More</button>
                            </div>
                         </div>
                     </div>
