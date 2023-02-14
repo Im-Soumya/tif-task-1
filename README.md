@@ -5,6 +5,8 @@ This is the task 1 of Round 2 (React Assignment).
 <strong>Task 1: Build UI</strong>
 Figma design was provided and the final project was supposed to be exactly the same as the design.
 
+<strong>Check the live version [here](https://tif-task-1-build-ui.vercel.app/)</strong>
+
 ## Getting Started
 
 First, run the development server:
