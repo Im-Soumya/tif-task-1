@@ -1,9 +1,9 @@
+import Image from "next/image"
 import { useEffect, useState } from "react"
 import {GrFormNext, GrFormPrevious} from "react-icons/gr"
 import { Source_Sans_Pro, Poppins } from "@next/font/google"
 
 import { data } from "@/utils/data"
-import Image from "next/image"
 
 const source = Source_Sans_Pro({
     weight: ['700'],
@@ -24,18 +24,23 @@ const Articles = () => {
 
     const indexOfLastArticle = currentPage * articlesPerPage
     const indexOfFirstArticle = indexOfLastArticle - articlesPerPage
+    // Adjusting the data based on the current page
     const currentArticles = data.slice(indexOfFirstArticle, indexOfLastArticle)
 
+    // Moving to the next page
     const paginateNext = () => setCurrentPage(currentPage + 1)
+    // Moving to the previous page
     const paginatePrev = () => setCurrentPage(currentPage - 1)
 
     useEffect(() => {
+        // Disabling the previous button if user is at the first page
         if(indexOfFirstArticle > 0) {
             setIsPrevDisabled(false)
         } else {
             setIsPrevDisabled(true)
         }
 
+        // Disabling the next button if user is at the last page
         if(indexOfLastArticle == data.length) {
             setIsNextDisabled(true)
         } else {
@@ -44,8 +49,8 @@ const Articles = () => {
     }, [indexOfFirstArticle, indexOfLastArticle])
 
     return (
-        <div className="mx-16 mt-[132px] md:mt-32 mb-[52px] md:mb-16">
-            <h1 className={`${source.className} text-[28px] md:text-[50px] text-center md:text-left text-primaryBlue mb-5 md:mb-12`}>Latest Articles</h1>
+        <div id="articles" className="mx-16 mt-32 md:mt-32 mb-32 md:mb-16">
+            <h1 className={`${source.className} text-[28px] md:text-[50px] text-center md:text-left text-primaryBlue mb-5 md:mb-10`}>Latest Articles</h1>
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 text-black">
                 {currentArticles.map(item => (
@@ -61,7 +66,7 @@ const Articles = () => {
                            </div>    
         
                            <div className="flex justify-center lg:justify-start">
-                               <button className={`${source.className} text-[11px] md:text-[16px] py-2 md:py-3 px-6 md:px-8 border-1 border-bodyBlack text-bodyBlack rounded-full hover:bg-gray-100 duration-200`}>Read More</button>
+                               <button className={`${source.className} text-[11px] md:text-[16px] py-2 md:py-3 px-6 md:px-7 border-1 border-bodyBlack text-bodyBlack rounded-full hover:bg-gray-100 duration-200`}>Read More</button>
                            </div>
                         </div>
                     </div>
