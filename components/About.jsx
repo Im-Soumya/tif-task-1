@@ -25,7 +25,9 @@ const About = () => {
             <h1 className={`${poppins.className} text-primaryBlue text-[26px] md:text-[45px] pb-5`}>About Us</h1>
             <p className='text-[12px] md:text-[15px] px-[50px] md:px-0 text-bodyBlack pb-8 md:pb-6'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. t has survived not only five centuries.</p>
             <Link href="#articles">
-            <button className={`${source.className} w-24 md:w-[132px] h-8 md:h-[42px] text-[12px] md:text-[16px] bg-jasper rounded-full hover:bg-[#c42b38] duration-200`}>Read More</button>
+              <button className={`${source.className} text-white w-24 md:w-[132px] h-8 md:h-[42px] text-[12px] md:text-[16px] bg-jasper rounded-full hover:bg-[#c42b38] duration-200`}>
+                Read More
+              </button>
             </Link>
         </div>
     </div>
