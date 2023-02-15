@@ -66,7 +66,7 @@ const Articles = () => {
                            </div>    
         
                            <div className="flex justify-center lg:justify-start">
-                               <button className={`${source.className} text-[11px] md:text-[16px] py-2 md:py-3 px-6 md:px-7 border-1 border-bodyBlack text-bodyBlack rounded-full hover:bg-gray-100 duration-200`}>Read More</button>
+                               <button className={`w-[118px] md:w-[131px] h-[32px] md:h-[42px] ${source.className} text-[11px] md:text-[16px] border-1 border-bodyBlack text-bodyBlack rounded-full hover:bg-gray-100 duration-200`}>Read More</button>
                            </div>
                         </div>
                     </div>
@@ -74,16 +74,12 @@ const Articles = () => {
         </div>
 
         <div className="text-[#424961] flex items-center justify-center mt-10 md:mt-16">
-            <button onClick={paginatePrev} disabled={isPrevDisabled} className="border-1 border-gray-300 p-1 rounded-lg"><GrFormPrevious size={25} /></button>
-            <p className="mx-3">{currentPage}/2</p>
-            <button onClick={paginateNext} disabled={isNextDisabled} className="border-1 border-gray-300 p-1 rounded-lg"><GrFormNext size={25} /></button>
+            <button onClick={paginatePrev} disabled={isPrevDisabled} className="border-1 border-gray-300 p-1 rounded-lg"><GrFormPrevious className="text-primaryBlue" size={25} /></button>
+            <p className={`${source.className} mx-3 text-primaryBlue tracking-wider`}>{currentPage}/2</p>
+            <button onClick={paginateNext} disabled={isNextDisabled} className="border-1 border-gray-300 p-1 rounded-lg"><GrFormNext className="text-primaryBlue" size={25} /></button>
         </div>
     </div>
   )
 }
 
 export default Articles
-
-/**
- * 
- */
